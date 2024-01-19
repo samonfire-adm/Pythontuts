@@ -4,7 +4,7 @@ def convert_24hrs(time_12hrs):
     min, am_pm = min_ampm[:2], min_ampm[2:]
     hrs = int(hrs)
 
-    if am_pm.lower() == "pm" and hrs != 12:
+    if am_pm.lower() == "pm" and hrs !=  12:
         hrs += 12
     elif am_pm.lower() == "am" and hrs == 12:
         hrs = 0
